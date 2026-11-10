@@ -4,6 +4,14 @@ Repository for *Vendi Anomaly Scores for Efficient and Accurate Anomaly Detectio
 
 This repository contains code to reproduce the benchmark results reported in our paper, including our ADBENCH and ImageNet experiments. 
 
+## Visual intuition
+
+VAS scores each sample by measuring how its removal changes the dataset's Vendi Score. Removing a normal sample has little spectral impact, while removing an anomaly produces a larger change, separating anomalous from normal samples.
+
+![Visual demonstration of the Vendi Anomaly Score method](fig1_histogram.png)
+
+*Figure 1. Visual demonstration of VAS. Anomalies have a larger spectral impact when removed from a contaminated dataset, producing lower leave-one-out Vendi Scores than normal samples.*
+
 ## Install
 
 Create a Python environment and install the benchmark dependencies:
